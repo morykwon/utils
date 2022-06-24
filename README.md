@@ -6,6 +6,6 @@ A collection of Util functions used by morykwon
 
 # Todo
 
-[] export type
-[] build-file optimization
-[] npm deploy
+- [ ] export type
+- [ ] build-file optimization
+- [ ] npm deploy
