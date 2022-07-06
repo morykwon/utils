@@ -23,9 +23,12 @@ module.exports = {
     ],
   },
   output: {
-    library: '_',
-    libraryTarget: 'umd',
+    library: {
+      name: '_',
+      type: 'umd'
+    },
     path: path.resolve(__dirname, './dist'),
     filename: 'utils.min.js',
+    clean: true
   },
 };
