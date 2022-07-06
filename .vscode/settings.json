@@ -1,5 +1,14 @@
 {
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true
-    }
+	"editor.formatOnSave": false,
+	"eslint.validate": [
+		"vue",
+		"javascript",
+		"typescript"
+	],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"editor.tabSize": 2,
+	"editor.insertSpaces": true,
+	"editor.detectIndentation": false,
 }

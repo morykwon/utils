@@ -18,9 +18,12 @@ const getAllFilesByLoop = (folder: string): string[] => {
         currentFolder,
         fileOrDirectory.name,
       );
-      fileOrDirectory.isFile()
-        ? allFiles.push(absoluteFilePath)
-        : folderQueue.push(absoluteFilePath);
+
+      if (fileOrDirectory.isFile()) {
+        allFiles.push(absoluteFilePath);
+      } else {
+        folderQueue.push(absoluteFilePath);
+      }
     });
   }
 

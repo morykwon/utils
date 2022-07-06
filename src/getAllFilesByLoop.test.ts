@@ -1,7 +1,7 @@
 import mock from 'mock-fs';
-import getAllFilesRecursively from './getAllFilesRecursively';
+import getAllFilesByLoop from './getAllFilesByLoop';
 
-describe('getAllFilesRecursively', () => {
+describe('getAllFilesByLoop', () => {
   const dummyFilePaths = {
     'test1.txt': 'This is TEXT',
     mdx: {
@@ -28,7 +28,7 @@ describe('getAllFilesRecursively', () => {
 
   context('with Folder(with Files)', () => {
     it('return FileList', () => {
-      const fileList = getAllFilesRecursively(`${process.cwd()}/src/dummy`);
+      const fileList = getAllFilesByLoop(`${process.cwd()}/src/dummy`);
 
       const files = [
         'dept1/dept2/test.md',

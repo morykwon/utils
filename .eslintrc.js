@@ -28,4 +28,9 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/extensions': 'off',
   },
+  settings: {
+    react: {
+      version: '999.999.999',
+    },
+  },
 };
